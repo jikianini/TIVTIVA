@@ -1,0 +1,187 @@
+body {
+	position: absolute; 
+	width-height: 100%; 
+	top-right-left-bottom: 0px;
+	background-image: url("img/background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.bottles {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.bottles img {
+	width: 100px;
+	height: 150px;
+	position: relative;
+	animation-name: move;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	cursor: pointer; 
+}
+
+@keyframes move {
+	0%   {left:0px; top:0px;}
+	25%  {left:0px; top:20px;}
+	50%  {left:0px; top:0px;}
+	75%  {left:0px; top:20px;}
+	100% {left:0px; top:0px;}
+}
+
+
+/*ეს სტილი არის ბოთლის დახურვის შემდეგ ანიმაციებისთვის, არ ვიცი რამდენად გამოგადგება...*/
+
+/*.bottles img.survivor {
+	position: relative;
+	animation-name: survivor;
+	animation-duration: 6s;
+} 
+
+@keyframes survivor {
+	from {bottom: 0px;}
+	to {bottom: 200px;}
+}
+
+
+.bottles img.victim {
+	position: relative;
+	animation-name: victim;
+	animation-duration: 6s;
+}
+
+@keyframes victim {
+	from {top: 0px;}
+	to {top: 350px;}
+}
+*/
+
+
+#bottle1 {
+	margin-top: 45%;
+	margin-left: 60%
+}
+
+#bottle2 {
+	margin-top: -15%;
+	margin-left: 90%;
+}
+
+#bottle3 {
+	margin-top: -40%;
+	margin-left: 125%;
+}
+
+#bottle4 {
+	margin-top: -28%;
+	margin-left: 155%;
+}
+
+#bottle5 {
+	margin-top: -35%;
+	margin-left: 185%;
+}
+
+#bottle6 {
+	margin-top: -22%;
+	margin-left: 210%;
+}
+
+.tivtiva {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+#tivtivaicon {
+	width: 200px;
+	height: 200px;
+	margin-top: -50%;
+	margin-left: 3%;
+	cursor: pointer;
+}
+
+
+.modal-body {
+	background-image: url("img/scroll.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 2rem;
+	background-color: none;
+	border: none;
+}
+
+.modal-content {
+	background-color: none;
+	border: none;
+	margin: 3rem;
+}
+
+.modal-header {
+	border-bottom: none;
+}
+
+
+
+/*  media tags  */
+
+
+/*  xxs ---  0px - 425px    */
+
+@media screen and (min-width: 0px) {
+
+
+	#about-wrapper {
+		width: 80%;
+	}
+	-
+	#menu-nav li {
+		margin-right: 20px;
+	}
+
+}
+
+
+/*  extra small == mobile (bootstrap xs) ---  426px - 767px    */
+
+@media screen and (min-width: 426px) {
+
+
+}
+
+/*  small == tablet (bootstrap sm) ---  768px - 991px    */
+
+@media screen and (min-width: 768px) {
+
+	#about-wrapper {
+		width: 60%;
+	}
+
+	#menu-nav li {
+		margin-right: 30px;
+	}
+
+}
+
+/*  medium == notebook small (bootstrap md) ---  992px - 1199px    */
+
+@media screen and (min-width: 992px) {
+
+
+}
+
+/*  large == notebook large (bootstrap lg) ---  1200px +   */
+
+@media screen and (min-width: 1200px) {
+
+
+	#about-wrapper {
+		width: 45%;
+	}
+
+}
+
